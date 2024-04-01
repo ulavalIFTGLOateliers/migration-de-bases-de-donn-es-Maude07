@@ -9,6 +9,8 @@ INSERT INTO band (bandName, creation, genre) VALUES
 ALTER TABLE musician CHANGE singerName musicianName varchar(50);
 ALTER TABLE musician ADD (role varchar(50), bandName varchar(50));
 
+
+
 UPDATE musician M SET M.role = 'vocals', M.bandName = 'Crazy Duo' WHERE M.musicianName LIKE 'Alina';
 UPDATE musician M SET M.role = 'guitar', M.bandName = 'Mysterio' WHERE M.musicianName LIKE 'Mysterio';
 UPDATE musician M SET M.role = 'percussion', M.bandName = 'Crazy Duo' WHERE M.musicianName LIKE 'Rainbow';
